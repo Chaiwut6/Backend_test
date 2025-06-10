@@ -1,0 +1,46 @@
+User
+-----
+- id (PK)
+- name
+- email
+- password
+- created_at
+
+Wallet
+-----
+- id (PK)
+- user_id (FK)
+- type 
+- currency 
+- balance
+
+TradeOrder
+-----
+- id (PK)
+- user_id (FK)
+- type 
+- currency 
+- amount
+- price_per_unit
+- status 
+- created_at
+
+TradeMatch
+-----
+- id (PK)
+- buy_order_id (FK)
+- sell_order_id (FK)
+- amount
+- price
+- created_at
+
+Transaction
+-----
+- id (PK)
+- from_wallet_id (FK)
+- to_wallet_id (FK)
+- external_address 
+- currency
+- amount
+- type 
+- created_at

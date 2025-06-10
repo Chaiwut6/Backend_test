@@ -17,12 +17,12 @@
 - ติดตั้ง Docker
 - Clone โปรเจกต์
 - ตั้งค่า .env
-    DB_HOST=db
-    DB_PORT=3306
-    DB_USER=root
-    DB_PASS=rootpassword
-    DB_NAME=crypto_exchange
-    PORT=3000
+    - DB_HOST
+    - DB_PORT
+    - DB_USER
+    - DB_PASS
+    - DB_NAME
+    - PORT=3000
 - docker-compose up --build
 - docker backend node seeders/seed.js
 
